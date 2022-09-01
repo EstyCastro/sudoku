@@ -120,6 +120,7 @@ function finishBoard(){
   }
   if(mistakeCounter>0){
     document.getElementById("msg").textContent="You failed "
+    console.log(document.getElementById("counterWrong").textContent)
     document.getElementById("counterWrong").textContent=` ${mistakeCounter} You have only ${--counterFailed} attempts `
     counterFailed
     if(counterFailed<=0){
