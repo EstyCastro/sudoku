@@ -28,7 +28,7 @@ let timeRemaining;
 let selectedNum;
 const para = new URLSearchParams(window.location.search);//חילוץ השלב הנבחר משורת הURL
 const level = para.get("Level");
-const counterFailed =3;
+let counterFailed =3;
 let boardLevel = mat;
 
  window.onload = function() {
